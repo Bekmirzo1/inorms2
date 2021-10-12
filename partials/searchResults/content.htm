@@ -1,0 +1,11 @@
+<h4 class="search__item-title">
+    <a href="{{ result.url | app }}">{{ result.title | raw }}</a>
+</h4>
+
+<p class="search__text">
+    {{ result.excerpt | raw }}
+</p>
+
+<p class="search__button-parent">
+    <a class="search__button btn" href="{{ result.url | app }}">{{ __SELF__.visitPageMessage }}</a>
+</p>

@@ -1,0 +1,68 @@
+[viewBag]
+snippetCode = "business_card_widget"
+snippetName = "Business Card"
+==
+<div class="business">
+    <div class="business__container">
+        <div class="business__body">
+            <div class="business__image _ibg">
+                <img src="../../../themes/inorms/assets/images/1x1.png" data-src="{{ this.theme.business_card_widget.photo | media }}">
+            </div>
+            <div class="business__content">
+                <div class="business__header">
+                    <div class="business__content-image"><img src="{{ this.theme.business_card_widget.logo | media }}">
+                    </div>
+                    <div class="business__title">{{ this.theme.business_card_widget.title }}</div>
+                </div>
+                <div class="business__mob">
+                    <div class="business__text">{{ this.theme.business_card_widget.text|nl2br }}</div>
+                </div>
+                <div class="business__contact contact-business">
+                    <div class="contact-business__adress">{{ this.theme.business_card_widget.contacts|raw|nl2br }}</div>
+                    <ul class="contact-business__icons">
+                        {% if this.theme.business_card_widget.email %}
+                        <li class="contact-business__icon">
+                            <a href="{{ this.theme.business_card_widget.email}}">
+                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.9778 4.66892V11.5444C16.9778 12.2454 16.7096 12.9198 16.2282 13.4294C15.7467 13.9389 15.0886 14.2449 14.3887 14.2846L14.2333 14.2888H2.83331C2.13231 14.2889 1.45786 14.0207 0.948316 13.5392C0.438777 13.0578 0.132777 12.3996 0.0930895 11.6998L0.0888672 11.5444V4.66892L8.23944 8.93843C8.33012 8.98592 8.43095 9.01073 8.53331 9.01073C8.63567 9.01073 8.7365 8.98592 8.82718 8.93843L16.9778 4.66892ZM2.83331 0.777718H14.2333C14.9136 0.777636 15.5696 1.0302 16.0742 1.48643C16.5788 1.94266 16.896 2.57004 16.9642 3.24687L8.53331 7.66332L0.102378 3.24687C0.167842 2.59691 0.462998 1.99162 0.934789 1.5398C1.40658 1.08797 2.02406 0.819253 2.67624 0.78194L2.83331 0.777718H14.2333H2.83331Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if this.theme.business_card_widget.telegram %}
+                        <li class="contact-business__icon">
+                            <a href="{{ this.theme.business_card_widget.telegram}}">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.48 1.95827L15.7438 15.2416C15.5373 16.1791 14.999 16.4124 14.234 15.9708L10.065 12.8083L8.05329 14.7999C7.83067 15.0291 7.64448 15.2208 7.21543 15.2208L7.51496 10.8499L15.2419 3.66244C15.5778 3.35411 15.169 3.18327 14.7197 3.49161L5.16734 9.68327L1.05496 8.35827C0.160432 8.07077 0.144241 7.43744 1.24115 6.99577L17.3264 0.616607C18.0711 0.329107 18.7228 0.78744 18.48 1.95827Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if this.theme.business_card_widget.whatsapp %}
+                        <li class="contact-business__icon">
+                            <a href="{{ this.theme.business_card_widget.whatsapp}}">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.2534 4.4131C13.6934 0.466434 8.46672 -0.706899 4.41338 1.74643C0.466716 4.19977 -0.813283 9.5331 1.74672 13.4798L1.96005 13.7998L1.10672 16.9998L4.30672 16.1464L4.62672 16.3598C6.01338 17.1064 7.50672 17.5331 9.00005 17.5331C10.6 17.5331 12.2 17.1064 13.5867 16.2531C17.5334 13.6931 18.7067 8.46643 16.2534 4.4131ZM14.0134 12.6264C13.5867 13.2664 13.0534 13.6931 12.3067 13.7998C11.88 13.7998 11.3467 14.0131 9.21338 13.1598C7.40005 12.3064 5.90672 10.9198 4.84005 9.31977C4.20005 8.5731 3.88005 7.6131 3.77338 6.6531C3.77338 5.79977 4.09338 5.0531 4.62672 4.51977C4.84005 4.30643 5.05338 4.19977 5.26672 4.19977H5.80005C6.01338 4.19977 6.22672 4.19977 6.33338 4.62643C6.54672 5.15977 7.08005 6.43977 7.08005 6.54643C7.18672 6.6531 7.18672 6.86643 7.08005 6.9731C7.18672 7.18643 7.08005 7.39977 6.97338 7.50643C6.86672 7.6131 6.76005 7.82643 6.65338 7.9331C6.44005 8.03977 6.33338 8.2531 6.44005 8.46643C6.86672 9.10643 7.40005 9.74643 7.93338 10.2798C8.57338 10.8131 9.21338 11.2398 9.96005 11.5598C10.1734 11.6664 10.3867 11.6664 10.4934 11.4531C10.6 11.2398 11.1334 10.7064 11.3467 10.4931C11.56 10.2798 11.6667 10.2798 11.88 10.3864L13.5867 11.2398C13.8 11.3464 14.0134 11.4531 14.12 11.5598C14.2267 11.8798 14.2267 12.3064 14.0134 12.6264Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            <div class="business__angle ls angle angle_left-top"></div>
+            <div class="business__angle ls angle angle_left-bottom"></div>
+            <div class="business__angle ls angle angle_right-top"></div>
+            <div class="business__angle ls angle angle_right-bottom"></div>
+        </div>
+    </div>
+</div>

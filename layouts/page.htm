@@ -1,0 +1,27 @@
+[staticPage]
+useContent = 1
+default = 1
+==
+{variable name="title_alternative" label="Title Alternative" tab="Attributes" type="text"}{/variable}
+{variable name="excerpt" label="Excerpt" tab="Attributes" type="textarea"}{/variable}
+{variable name="image" label="Image" tab="Attributes" type="mediafinder" mode="image"}{/variable}
+{variable name="hero_image" label="Hero image" tab="Attributes" type="mediafinder" mode="image"}{/variable}
+{% partial 'header' %}
+<div class="page">
+    <div class="rusland">
+        <div class="rusland__container _container">
+            <div class="rusland__body">
+                <h1 class="rusland__title _title2">
+                    {% if page.title_alternative %}
+                    {{ page.title_alternative }}
+                    {% else %}
+                    {{ this.page.title }}
+                    {% endif %}
+                </h1>
+                {% page %}
+                {% partial 'widgets/pages_contact_widget' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% partial 'footer' %}

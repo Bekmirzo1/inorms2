@@ -1,0 +1,115 @@
+name: Inorms
+description: 'Inorms theme'
+author: Dmitry Borovkov
+code: 'inorms'
+form:
+    fields:
+        company_full_name:
+            label: Company full name
+        company_short_name:
+            label: Company short name
+        header_logo:
+            label: Header logo
+            type: mediafinder
+            mode: image
+        mobile_menu_logo:
+            label: Mobile menu logo
+            type: mediafinder
+            mode: image
+        country_flag_title:
+            label: Country flag title
+        country_flag_icon:
+            label: Country flag icon
+            type: mediafinder
+            mode: image
+        mobile_menu_contacts:
+            label: Mobile menu contacts
+            type: nestedform
+            showPanel: true
+            form:
+                fields:
+                    phone:
+                        label: Phone
+                    email:
+                        label: Email
+                    telegram:
+                        label: Telegram
+                    whatsapp:
+                        label: Whatsapp
+        footer_logo:
+            label: Footer logo
+            type: mediafinder
+            mode: image
+        footer_contacts:
+            label: Footer contacts
+            type: nestedform
+            showPanel: true
+            form:
+                fields:
+                    primary:
+                        label: Primary
+                        type: textarea
+                    secondary:
+                        label: Secondary
+                        type: textarea
+                        comment: Hidden at mobile version
+        business_card_widget:
+            label: Business card widget
+            type: nestedform
+            showPanel: true
+            form:
+                fields:
+                    title:
+                        label: Title
+                    text:
+                        label: Text
+                        type: textarea
+                    contacts:
+                        label: Contacts
+                        type: richeditor
+                    photo:
+                        label: Photo
+                        type: mediafinder
+                        mode: image
+                    logo:
+                        label: Logo
+                        type: mediafinder
+                        mode: image
+                    email:
+                        label: Email
+                    telegram:
+                        label: Telegram
+                    whatsapp:
+                        label: Whatsapp
+        pages_contact_widget:
+            label: Pages contact widget
+            type: nestedform
+            showPanel: true
+            form:
+                fields:
+                    icons:
+                        label: Icons
+                        type: repeater
+                        form:
+                            fields:
+                                icon:
+                                    type: mediafinder
+                                    mode: image
+                    button_text:
+                        label: Button text
+                    page:
+                        label: Target page
+                        type: staticpagepicker
+        open_graph:
+            label: Social share
+            type: nestedform
+            showPanel: true
+            form:
+                fields:
+                    description:
+                        label: Description
+                        type: textarea
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image

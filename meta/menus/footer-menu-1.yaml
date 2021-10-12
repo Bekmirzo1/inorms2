@@ -1,0 +1,106 @@
+items:
+    -
+        title: AGB
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: agb
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: FAQ
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: faq
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Sitemap
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: sitemap
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Impressum
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: impressum
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Compliance
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: compliance
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Datenschutz
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: datenschutz
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Downloads
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: downloads
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kontakt
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: kontakt
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Footer menu 1'

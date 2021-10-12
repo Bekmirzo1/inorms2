@@ -1,0 +1,48 @@
+[staticMenu footerMenu1]
+code = "footer-menu-1"
+
+[staticMenu footerMenu2]
+code = "footer-menu-2"
+==
+<footer class="footer">
+    <div class="footer__container _container">
+        <div class="footer__body">
+            <div class="footer__header">
+                <a class="footer__logo" href="/" alt="{{ this.theme.company_full_name }}"
+                    title="{{ this.theme.company_full_name }}">
+                    <img src="{{ this.theme.footer_logo | media }}" height="113">
+                </a>
+                <p>
+                © {{ this.theme.company_short_name }}
+            </p>
+            </div>
+            <div class="footer__item">
+                {% for item in footerMenu1.menuItems %}
+                <a href="{{ item.url }}">{{ item.title }}</a>
+                {% endfor %}
+            </div>
+            <div class="footer__item">
+                {% for item in footerMenu2.menuItems %}
+                <a href="{{ item.url }}">{{ item.title }}</a>
+                {% endfor %}
+            </div>
+            <div class="footer__item footer__item_show">
+                {{ this.theme.footer_contacts.primary|nl2br }}
+            </div>
+            <div class="footer__item">
+                {{ this.theme.footer_contacts.secondary|nl2br }}
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+{% if page.url == '/kontakt' %}
+{% framework extras %}
+{% endif %}
+{% scripts %}
+{% styles %}
+
+<script>{{ ['assets/js/scripts.js']|inline}}</script>
+</body>
+
+</html>

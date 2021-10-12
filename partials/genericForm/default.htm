@@ -1,0 +1,69 @@
+<div class="contact__form form">
+    <div class="form__container _container">
+        <div class="form__content">
+            <h2 class="form__title">Anfrage</h2>
+            <form data-request="{{ __SELF__ }}::onFormSubmit" class="form__body">
+                {{ form_token() }}
+                <div class="form__row">
+                    <div class="form__item">
+                        <label for="firstname">Vorname</label>
+                        <input type="text" id="firstname" name="firstname" class="input">
+                    </div>
+                    <div class="form__item">
+                        <label for="lastname">Name</label>
+                        <input type="text" id="lastname" name="lastname" class="input">
+                    </div>
+                    <div class="form__item">
+                        <label for="email">E-Mail</label>
+                        <input type="text" id="email" name="email" class="input">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="tel">Telefon</label>
+                        <input type="text" id="tel" name="tel" class="input">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="company">Firma</label>
+                        <input type="text" id="company" name="company" class="input">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="job">Tätigkeit</label>
+                        <input type="text" id="job" name="job" class="input">
+                    </div>
+                </div>
+                <div class="form__item form__item_text">
+                    <label for="comments">Nachricht</label>
+                    <textarea id="comments" name="comments" class="input"></textarea>
+                </div>
+                <div class="form__agrees">
+                    <div class="form__agree">
+                        <label for="agree_terms" class="checkbox">
+                            <input type="checkbox" id="agree_terms" value="1" name="agree_terms" checked
+                                class="checkbox__input">
+                            <span class="checkbox__text">
+                                <span>Ich habe dieallgemeinen Geschäftsbedingungen gelesen und akzeptiert</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="form__agree">
+                        <label for="agree_security" class="checkbox">
+                            <input type="checkbox" id="agree_security" value="1" name="agree_security"
+                                class="checkbox__input">
+                            <span class="checkbox__text">
+                                <span>
+                                    Ich habe die Datenschutzerklärung gelesen und akzeptiert
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__error" id="{{ __SELF__ }}_forms_flash"></div>
+                <div class="form__button-parent">
+                    <button class="form__button" type="submit">Nachricht senden</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

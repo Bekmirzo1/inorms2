@@ -1,0 +1,106 @@
+items:
+    -
+        title: 'EAC Zertifikat'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: eac-zertifikat
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'GOST Zertifizierung'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: gost-zertifizierung-russland
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'TR ZU Zertifizierung'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: tr-zertifizierung-russland
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Registrierung (SGR)'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: hygienische-expertise
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'EAC Kennzeichnung'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: eac-kennzeichen-russland-eawu
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'EAC Produktionsaudit'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: organisation-von-audits
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'EAC Dokumentation'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: dokumentation-eac-zertifizierung
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'EAC Deklaration'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: eac-deklaration
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Footer menu 2'

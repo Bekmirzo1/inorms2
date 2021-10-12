@@ -1,0 +1,722 @@
+items:
+    -
+        title: Unternehmen
+        nesting: null
+        type: header
+        url: null
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: Blog
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: blog-eac-zertifizierung
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Start
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: wir-ueber-uns
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Kontakt
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: kontakt
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Downloads
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: downloads
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Compliance
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: compliance
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Datenschutz
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: datenschutz
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Impressum
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: impressum
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Sitemap
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: sitemap
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: AGB
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: agb
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: FAQ
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: faq
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Zertifizierung
+        nesting: null
+        type: header
+        url: null
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'EAC Zertifikat für Russland und EAWU'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'EAC Deklaration für Russland und EAWU'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-deklaration
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'EAC Zertifizierung von Medizinprodukten'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: zertifizierung-von-medizinprodukten-in-russland-eawu
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'EAC Zertifizierung von ATEX Geräten'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat-fuer-explosionsgefaehrdete-ausrustungen
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'EAC Zertifizierung von Druckgeräten'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat-fuer-druckgeraete
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'EAC Zertifizierung von Messgeräten'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: metrologische-eac-zertifizierung
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Staatliche Registrierung (SGR)'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: hygienische-expertise
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Brandschutzzertifizierung
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-brandschutz-zertifizierung
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'GOST Zertifizierung'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: gost-zertifizierung-russland
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'TR Zertifizierung'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: tr-zertifizierung-russland
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Branchen
+        nesting: null
+        type: header
+        url: null
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'Maschinen und Anlagen'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat-fuer-maschinen-und-anlagen
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Radio- und Elektrotechnik'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat-fuer-elektrotechnik
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Lebensmittel und Getränke'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat-fuer-lebemsmittel
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Möbel und Wohnaccessoires'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat-fuer-moebel
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Pflegeprodukte und Kosmetik'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat-fuer-kosmetik-und-parfuem
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Verpackungen und Materialien'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat-fuer-verpackungen
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Baumaterialien und Baustoffe'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifizierung-fur-baumaterialien
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Chemikalien und Brennstoffe'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat-fuer-chemikalien
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Radfahrzeuge und Autoteile'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat-fuer-kraftfahrzeuge
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Bekleidung und Schuhe'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifikat-fuer-textilien-und-schuhe
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Leistungen
+        nesting: null
+        type: header
+        url: null
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'EAC Kennzeichnung'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-kennzeichen-russland-eawu
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Organisation von Audits'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: organisation-von-audits
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Technische Übersetzung'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: uebersetzung-von-dokumenten
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Professionelle Schulung'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: professionelle-schulung
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Professionelle Beratung'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: professionelle-beratung
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Zertifizierungsmatrix
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifizierungsmatrix-russland-eawu
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Inspektionskontrolle
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: inspektionskontrolle
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Vertragsperson
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: bevollmaechtigte-vertetung
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Projektlogistik
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: projektlogistik
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Verzollung
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: verzollung
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Dokumentation
+        nesting: null
+        type: header
+        url: null
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: Festigkeitsberechnung
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: festigkeitsberechnung-fur-eac-zertifizierung
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Zündgefahrenbewertung
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: zundgefahrenbewertung-fur-eac-ex-gerate
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Sicherheitsbetrachtung
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: sicherheitsbetrachtung-eac-zertifikat
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Bedienungsanleitung
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: bedienungsanleitung-eac-zertifikat
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Druckbehälterpass
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: eac-zertifizierung-von-druckgeraeten
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Technischer Pass'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: technischer-pass-eac-zertifikat
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Datenblatt (SDB)'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: sicherheitsdatenblatt-eac-zertifikat
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Erstkalibrierung
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: erstkalibrierung
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Prüfprotokolle
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: pruefprotokolle-eac-zertifizierung
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Kontakt
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: kontakt
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Main menu'

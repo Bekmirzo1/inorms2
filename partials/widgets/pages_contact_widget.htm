@@ -1,0 +1,16 @@
+<div class="widget-companies">
+    <div class="widget-companies__container">
+        <div class="widget-companies__body">
+            <ul class="widget-companies__list">
+                {% for icon in this.theme.pages_contact_widget.icons %}
+                <a class="widget-companies__item" href="{{ this.theme.pages_contact_widget.page|staticPage }}"><img
+                        src="{{ icon.icon | media }}" alt=""></a>
+                {% endfor %}
+            </ul>
+            <a class="widget-companies__button btn _fw" href="{{ this.theme.pages_contact_widget.page|staticPage }}">{{
+                this.theme.pages_contact_widget.button_text
+                }}
+            </a>
+        </div>
+    </div>
+</div>

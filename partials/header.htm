@@ -1,0 +1,125 @@
+==
+<?php
+function onStart() {
+    $this['locale'] = getenv('FRONTEND_LOCALE');
+}
+?>
+
+==
+<!doctype html>
+<html class="" lang="{{ locale }}" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-type">
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover" id="view" name="viewport"/>
+    <link href="{{ 'assets/favicon.ico'|theme }}" rel="icon" type="image/x-icon"/>
+
+    <title>{{ this.page.title }}</title>
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta content="{{ this.page.title }}"
+          property="og:title"/>
+    <meta content="{{ this.theme.open_graph.description }}"
+          property="og:description"/>
+    <meta content="{{ this.theme.open_graph.image | media }}"
+          property="og:image"/>
+          
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- <style>{{ [ 'assets/scss/'~this.layout.id~'-critical.scss' ]|inline }}</style>
+    <link href="{{ ['assets/scss/'~this.layout.id~'.scss' ]|theme }}" rel="stylesheet"> -->
+    <style>{{ [ 'assets/scss/styles.scss' ]|inline }}</style>
+    <style>{{ [ 'assets/scss/'~this.layout.id~'-critical.scss' ]|inline }}</style>
+    <link href="{{ ['assets/scss/'~this.layout.id~'.scss' ]|theme }}" rel="stylesheet">
+</head>
+
+<body class="{{ 'layout-'~this.layout.id }} {{ 'page-'~this.page.id }}">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <nav class="header__body">
+                    <a href="/" alt="{{ this.theme.company_full_name }}" class="header__logo"
+                        title="{{ this.theme.company_full_name }}">
+                        <img src="{{ this.theme.header_logo | media }}">
+                    </a>
+                    <div class="header__burger">
+                        <a href="/" alt="{{ this.theme.company_full_name }}" class="header__logo-menu"
+                        title="{{ this.theme.company_full_name }}">
+                        <img src="{{ this.theme.mobile_menu_logo | media }}" height="60">
+                    </a>
+                        {% partial 'menu' %}
+                        <ul class="header__contact contact-header">
+                            {% if this.theme.mobile_menu_contacts.phone %}
+                            <li class="contact-header__item">
+                                <a href="{{ this.theme.mobile_menu_contacts.phone}}" class="contact-header__link">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.68208 9.25124C8.67171 10.2552 9.86912 11.0302 11.1902 11.5221L12.9775 10.0998C13.0305 10.0633 13.0933 10.0438 13.1576 10.0438C13.222 10.0438 13.2848 10.0633 13.3378 10.0998L16.6563 12.2379C16.7823 12.3136 16.8889 12.4176 16.9678 12.5417C17.0467 12.6657 17.0957 12.8064 17.1108 12.9526C17.126 13.0988 17.107 13.2466 17.0553 13.3842C17.0035 13.5218 16.9205 13.6455 16.8127 13.7455L15.2578 15.2815C15.0351 15.5015 14.7614 15.663 14.4611 15.7515C14.1608 15.84 13.8433 15.8528 13.5369 15.7887C10.4802 15.1574 7.66271 13.6789 5.40653 11.5221C3.20042 9.3438 1.6738 6.57217 1.01186 3.54338C0.946469 3.2417 0.960117 2.92824 1.05148 2.63339C1.14285 2.33853 1.30883 2.07227 1.53334 1.86042L3.14519 0.305459C3.24494 0.202958 3.36658 0.124351 3.50101 0.0755224C3.63544 0.0266941 3.77917 0.00891039 3.92145 0.0235028C4.06372 0.0380952 4.20085 0.0846856 4.32257 0.159785C4.44429 0.234885 4.54744 0.336548 4.62431 0.457162L6.83349 3.73301C6.87159 3.78445 6.89216 3.84678 6.89216 3.91079C6.89216 3.97481 6.87159 4.03713 6.83349 4.08857L5.37808 5.8379C5.88325 7.13257 6.67028 8.29855 7.68208 9.25124Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if this.theme.mobile_menu_contacts.email %}
+                            <li class="contact-header__item">
+                                <a href="{{ this.theme.mobile_menu_contacts.email}}" class="contact-header__link">
+                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9778 4.66903V11.5445C16.9778 12.2455 16.7096 12.92 16.2282 13.4295C15.7467 13.939 15.0886 14.245 14.3887 14.2847L14.2333 14.2889H2.83331C2.13231 14.289 1.45786 14.0208 0.948316 13.5394C0.438777 13.0579 0.132777 12.3998 0.0930895 11.6999L0.0888672 11.5445V4.66903L8.23944 8.93854C8.33012 8.98604 8.43095 9.01085 8.53331 9.01085C8.63567 9.01085 8.7365 8.98604 8.82718 8.93854L16.9778 4.66903ZM2.83331 0.777832H14.2333C14.9136 0.77775 15.5696 1.03032 16.0742 1.48655C16.5788 1.94278 16.896 2.57015 16.9642 3.24699L8.53331 7.66343L0.102378 3.24699C0.167842 2.59703 0.462998 1.99174 0.934789 1.53991C1.40658 1.08809 2.02406 0.819368 2.67624 0.782054L2.83331 0.777832H14.2333H2.83331Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if this.theme.mobile_menu_contacts.telegram %}
+                            <li class="contact-header__item">
+                                <a href="{{ this.theme.mobile_menu_contacts.telegram}}" class="contact-header__link">
+                                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.48 1.95823L15.7438 15.2416C15.5373 16.1791 14.999 16.4124 14.234 15.9707L10.065 12.8082L8.05329 14.7999C7.83067 15.0291 7.64448 15.2207 7.21543 15.2207L7.51496 10.8499L15.2419 3.66239C15.5778 3.35406 15.169 3.18323 14.7197 3.49156L5.16734 9.68323L1.05496 8.35823C0.160432 8.07073 0.144241 7.43739 1.24115 6.99573L17.3264 0.616561C18.0711 0.329061 18.7228 0.787395 18.48 1.95823Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if this.theme.mobile_menu_contacts.whatsapp %}
+                            <li class="contact-header__item">
+                                <a href="{{ this.theme.mobile_menu_contacts.whatsapp}}" class="contact-header__link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.2533 4.41333C13.6933 0.466666 8.46659 -0.706666 4.41326 1.74667C0.466594 4.2 -0.813406 9.53333 1.74659 13.48L1.95993 13.8L1.10659 17L4.30659 16.1467L4.62659 16.36C6.01326 17.1067 7.50659 17.5333 8.99993 17.5333C10.5999 17.5333 12.1999 17.1067 13.5866 16.2533C17.5333 13.6933 18.7066 8.46667 16.2533 4.41333ZM14.0133 12.6267C13.5866 13.2667 13.0533 13.6933 12.3066 13.8C11.8799 13.8 11.3466 14.0133 9.21326 13.16C7.39993 12.3067 5.90659 10.92 4.83993 9.32C4.19993 8.57333 3.87993 7.61333 3.77326 6.65333C3.77326 5.8 4.09326 5.05333 4.62659 4.52C4.83993 4.30667 5.05326 4.2 5.26659 4.2H5.79993C6.01326 4.2 6.22659 4.2 6.33326 4.62667C6.54659 5.16 7.07993 6.44 7.07993 6.54667C7.18659 6.65333 7.18659 6.86667 7.07993 6.97333C7.18659 7.18667 7.07993 7.4 6.97326 7.50667C6.86659 7.61333 6.75993 7.82667 6.65326 7.93333C6.43993 8.04 6.33326 8.25333 6.43993 8.46667C6.86659 9.10667 7.39993 9.74667 7.93326 10.28C8.57326 10.8133 9.21326 11.24 9.95993 11.56C10.1733 11.6667 10.3866 11.6667 10.4933 11.4533C10.5999 11.24 11.1333 10.7067 11.3466 10.4933C11.5599 10.28 11.6666 10.28 11.8799 10.3867L13.5866 11.24C13.7999 11.3467 14.0133 11.4533 14.1199 11.56C14.2266 11.88 14.2266 12.3067 14.0133 12.6267Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    <div class="header__form-parent">
+                        <form action="{{ 'search' | page }}" method="get" class="header__form">
+                            <input name="q" type="text" autocomplete="off" placeholder="Suche" class="input">
+                        </form>
+                        <div class="header__form-icon">
+                            <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.8333 16.8333L13.095 13.0883L16.8333 16.8333ZM15.1667 8.08333C15.1667 9.96195 14.4204 11.7636 13.092 13.092C11.7636 14.4204 9.96195 15.1667 8.08333 15.1667C6.20472 15.1667 4.40304 14.4204 3.07466 13.092C1.74628 11.7636 1 9.96195 1 8.08333C1 6.20472 1.74628 4.40304 3.07466 3.07466C4.40304 1.74628 6.20472 1 8.08333 1C9.96195 1 11.7636 1.74628 13.092 3.07466C14.4204 4.40304 15.1667 6.20472 15.1667 8.08333V8.08333Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <a href="/" class="header__flag">
+                        <img src="{{ this.theme.country_flag_icon | media }}">
+                    </a>
+                    <button type="button" class="header__icon-menu icon-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </header>

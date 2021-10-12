@@ -1,0 +1,60 @@
+[staticPage]
+useContent = 0
+default = 0
+
+[staticMenu blogMenu]
+code = "blog-menu"
+==
+<?php
+function onStart() {
+    $theme = Cms\Classes\Theme::getEditTheme();
+    $pageList = new RainLab\Pages\Classes\PageList($theme);
+    $pages = $pageList->listPages();
+    $pagesIndexedByUrl = [];
+    foreach($pages as $page) {
+        $pagesIndexedByUrl[$page->url] = $page;
+    }
+    $this['pagesIndexedByUrl'] = $pagesIndexedByUrl;
+    $this['baseUrl'] = getenv('APP_URL');
+}
+?>
+==
+{variable name="title_alternative" label="Title Alternative" tab="Attributes" type="text"}{/variable}
+{variable type="text" name="button_text" label="Button text" tab="Settings"}{/variable}
+
+{% partial 'header' %}
+<div class="page">
+    <section class="blog">
+        <div class="blog__container _container">
+            <h1 class="blog__title _title">
+                {% if page.title_alternative %}
+                {{ page.title_alternative }}
+                {% else %}
+                {{ this.page.title }}
+                {% endif %}
+            </h1>
+            <div class="blog__columns">
+                {% for item in blogMenu.menuItems|reverse %}
+                {% set page = pagesIndexedByUrl[item.url|replace({(baseUrl): ''})] %}
+                {% if page %}
+                <div class="blog__column">
+                    <div class="blog__image _ibg">
+                        <img src="../../../themes/inorms/assets/images/1x1.png" data-src="{{ page.image | media |resize(410, 220, { mode: 'crop'}) }}"
+                            alt="{{ page.title }}" title="{{ page.title }}">
+                    </div>
+                    <div class="blog__item">
+                        <div class="blog__item-title">{{ page.title }}</div>
+                        <!-- можно использовать любой тэг, но не заголовки (h1-h6) -->
+                        <div class="blog__item-text">{{ page.excerpt }}</div>
+                        <a class="blog__item-button btn" href="{{ page.url }}">
+                            {{ button_text }}
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</div>
+{% partial 'footer' %}
